@@ -10,29 +10,6 @@ from collections import OrderedDict
 from operator import getitem
 
 
-class UiLogger:
-    def __init__(self, forceUpdate):
-        app = adsk.core.Application.get()
-        ui = app.userInterface
-        palettes = ui.palettes
-        self.textPalette = palettes.itemById("TextCommands")
-        self.forceUpdate = forceUpdate
-        self.textPalette.isVisible = True
-
-    def print(self, *args):
-        msg = str(args)
-        #msg = ""
-        # msg.join(str(args))
-        msg = msg.replace("(", "")
-        msg = msg.replace(")", "")
-        msg = msg.replace("'", "")
-        msg = msg.replace(",", "")
-
-        self.textPalette.writeText(msg)
-        if (self.forceUpdate):
-            adsk.doEvents()
-
-
 def run(context):
     ui = None
     try:
