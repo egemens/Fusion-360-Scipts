@@ -1,6 +1,6 @@
 # Fusion 360 tools to Mach3 script
 
-This script exports the tools, names and length offsets to Mach3 but not diameter offsets, since i only need toolnames and lengths.
+This script exports the toolnames and length offsets to Mach3 but not diameter offsets, since i only need toolnames and lengths.
 
 I use Mach3 on a CNC router. Normally all my tool offset stuff are handled by Fusion 360.
 The reason i want to sync tooltables between Mach3 and Fusion 360 is because i change tools manually.
