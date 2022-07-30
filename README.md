@@ -1,4 +1,4 @@
-# Fusion-360-Scipts
+# Fusion 360 tools to Mach3 script
 
 This script exports the tools, names and length offsets to Mach3 but not diameter offsets.
 
